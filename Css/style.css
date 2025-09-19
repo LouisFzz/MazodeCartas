@@ -1,0 +1,106 @@
+/* Reset */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #efefef;
+    color: #222;
+}
+
+.header {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: #CCBCAEFF;
+    border-bottom: 1px solid #ddd;
+}
+.logo img {
+    max-height: 200px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 500px; 
+    gap: 20px;
+    padding: 20px;
+    align-items: start; }
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    justify-content: flex-start;
+    max-height: 500px;    
+    overflow-y: auto;      
+}
+
+.cartas img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.14s, box-shadow 0.14s;
+    border-radius: 6px;
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.03);
+}
+.cartas img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.registroCartas {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tabla {
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.tabla table { width: 100%; border-collapse: collapse; text-align: center; }
+.tabla thead th {
+    background:#111; color:#fff; padding:10px; font-weight:600;
+}
+
+
+.tabla th, .tabla td { border: 1px solid #e6e6e6; padding: 8px; }
+
+.registro {
+    background: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.registro label { display:block; margin-top:8px; font-weight:600; }
+.registro input {
+    width: 100%; padding:8px; margin-top:6px; border:1px solid #ccc; border-radius:6px;
+}
+.registro button {
+    margin-top:12px; width:100%; padding:10px; background:#111; color:#fff; border:none; border-radius:6px;
+    cursor:pointer;
+}
+.registro button:hover { background:#333; }
+
+.message { margin-top:10px; font-size:13px; min-height:18px; color:#b00000; }
+.message.ok { color: #116611; }
+
+@media (max-width: 900px) {
+    .contenido { grid-template-columns: 1fr; }
+    .cartas { max-height: 220px; }
+    .tabla tbody { max-height: 220px; }
+    .cartas img { width: 70px; height: 96px; }
+}
