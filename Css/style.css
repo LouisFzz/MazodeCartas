@@ -1,4 +1,3 @@
-/* Reset */
 * { box-sizing: border-box; }
 body {
     margin: 0;
@@ -99,8 +98,28 @@ body {
 .message.ok { color: #116611; }
 
 @media (max-width: 900px) {
-    .contenido { grid-template-columns: 1fr; }
-    .cartas { max-height: 220px; }
-    .tabla tbody { max-height: 220px; }
-    .cartas img { width: 70px; height: 96px; }
+    
+    .header {
+        justify-content: center; 
+        padding: 0;            
+    }
+
+    .logo {
+        margin: 0 auto;       
+        text-align: center;
+    }
+
+    .contenido { 
+        grid-template-columns: 1fr; 
+    }
+    .cartas { 
+        max-height: 1000px; 
+    }
+    .tabla tbody { 
+        max-height: 220px; 
+    }
+    .cartas img { 
+        width: 70px; height: auto; 
+    }
 }
+
