@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="Css/style.css" />
+	<script src="Js/script.js" defer></script>
+	<link rel="icon" sizes="32x32" href="Img/icon.svg" />
+	<title>Cartas - Showdown ♠ ♥ ♣ ♦</title>
+</head>
+<body>
+
+	<header class="header" id="myheader">
+		<div class="logo" id="mylogo">
+			<img src="Img/logo.png" alt="Logo Showdown">
+		</div>
+	</header>
+
+	<main>
+		<section class="contenido">
+
+			<!-- IZQUIERDA: cartas -->
+			<div class="cartas" id="pokerCards">
+		
+				<img src="Img/1.png"  alt="A"  data-index="1"  data-num="A"  data-carta="As de Diamantes">
+				<img src="Img/2.png"  alt="2"  data-index="2"  data-num="2"  data-carta="Dos de Diamantes">
+				<img src="Img/3.png"  alt="3"  data-index="3"  data-num="3"  data-carta="Tres de Corazones">
+				<img src="Img/4.png"  alt="4"  data-index="4"  data-num="4"  data-carta="Cuatro de Corazones">
+				<img src="Img/5.png"  alt="5"  data-index="5"  data-num="5"  data-carta="Cinco de Corazones">
+				<img src="Img/6.png"  alt="6"  data-index="6"  data-num="6"  data-carta="Seis de Treboles">
+				<img src="Img/7.png"  alt="7"  data-index="7"  data-num="7"  data-carta="Siete de Diamantes">
+				<img src="Img/8.png"  alt="8"  data-index="8"  data-num="8"  data-carta="Ocho de Treboles">
+				<img src="Img/9.png"  alt="9"  data-index="9"  data-num="9"  data-carta="Nueve de Diamantes">
+				<img src="Img/10.png" alt="10" data-index="10" data-num="10" data-carta="Diez de Corazones">
+				<img src="Img/11.png" alt="J"  data-index="11" data-num="J"  data-carta="Jota de Treboles">
+				<img src="Img/12.png" alt="Q"  data-index="12" data-num="Q"  data-carta="Reina de Picas">
+				<img src="Img/13.png" alt="K"  data-index="13" data-num="K"  data-carta="Rey de Diamantes">
+			</div>
+
+			<div class="registroCartas" id="registerCards">
+
+				<div class="tabla">
+					<table id="tablaCartas">
+						<thead>
+							<tr>
+								<th>Número</th>
+								<th>Carta</th>
+								<th>Cantidad</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+
+				<form class="registro" id="formRegistro" autocomplete="off">
+					<label for="numero">Número:</label>
+					<input type="text" id="numero" name="numero" required>
+
+					<label for="carta">Carta:</label>
+					<input type="text" id="carta" name="carta" required>
+
+					<button type="submit">Guardar</button>
+					<div id="formMessage" class="message" aria-live="polite"></div>
+				</form>
+
+			</div>
+
+		</section>
+	</main>
+
+</body>
+</html>
