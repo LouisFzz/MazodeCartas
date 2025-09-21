@@ -15,9 +15,10 @@ body {
     border-bottom: 1px solid #ddd;
 }
 .logo img {
-    max-height: 200px;
+    align-self: center;
+    max-height: 100px;
     width: auto;
-    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .contenido {

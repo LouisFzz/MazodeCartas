@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #efefef;
+    color: #222;
+}
+
+section {
+    align-self: center;
+    justify-content: center;
+}
+
+.logologin {
+    background-color: #CCBCAEFF;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+}
+
+.logologin img {
+    display: block;
+    margin: 20px 20px 20px 20px;
+    height: 200px;
+    width: auto;
+    align-items: center;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logologin {
+    background: #CCBCAEFF;
+    padding: 30px 60px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.logologin img {
+    max-width: 220px;
+    height: auto;
+}
+
+.form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 380px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+form button:hover {
+    background: #333;
+}
+
+form a:hover{
+    text-decoration-color: blue;
+    text-decoration: underline;
+}
+
+.logMessage {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #b00000;
+    min-height: 18px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    
+    .logologin {
+        margin: 0 0 0 0;       
+        text-align: center;
+    }
+
+    .form { 
+        grid-template-columns: 1fr; 
+    }
+    
+    
+}

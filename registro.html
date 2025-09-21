@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="Css/style2.css" />
 	<script src="Js/usuarios.js" defer></script>
 	<link rel="icon" sizes="32x32" href="Img/icon.svg" />
-	<title>Ingresar - Showdown ♠ ♥ ♣ ♦</title>
+	<title>Registrarte - Showdown ♠ ♥ ♣ ♦</title>
 </head>
 
 <body>
@@ -17,18 +17,21 @@
 
 	<section class="form" id="myform">
 		
-		<form class="login" id="formLogin" autocomplete="off">
+		<form class="loginreg" id="formLoginreg" autocomplete="off">
 
-			<label for="UsuarioCorreo">Usuario o Correo:</label>
-			<input type="text" id="usuariocorreo" name="usuariocorreo" required>
+			<label for="Usuario">Usuario:</label>
+			<input type="text" id="usuario" name="usuario" required>
+
+			<label for="Correo">Correo:</label>
+			<input type="email" id="correo" name="correo" required>
 
 			<label for="Contraseña">Contraseña:</label>
 			<input type="password" id="contraseña" name="contraseña" required>
 
-			<button type="button" onclick="window.location.href='cartas.html'">Ingresar</button>
+			<button type="button" onclick="window.location.href='index.html'">Registrarte</button>
 			<div id="loginMessage" class="logMessage" aria-live="polite"></div>
 
-			<a href="registro.html">¿No tienes una cuenta? Registrate</a>
+			<a href="index.html">¿Ya tienes una cuenta? Ingresa</a>
 
 		</form>
 
